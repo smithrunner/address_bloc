@@ -84,12 +84,7 @@ class MenuController
   end
   
   def nuke_entires
-    address_book.entries.each do |entry|
-      address_book.entries.delete(entry)
-    end
-    address_book.entries.each do |entry|
-      address_book.entries.delete(entry)
-    end
+    address_book.nuke_entires
     puts "All friends have been deleted."
   end
 
